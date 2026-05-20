@@ -1,0 +1,1519 @@
+# ── CARDIOLOGY ───────────────────────────────────────────────────────────────
+afib
+atrial fibrillation
+vtach
+ventricular tachycardia
+vfib
+ventricular fibrillation
+mi
+myocardial infarction
+chf
+congestive heart failure
+ekg
+electrocardiogram
+echo
+echocardiogram
+cabg
+coronary artery bypass graft
+pci
+percutaneous coronary intervention
+avr
+aortic valve replacement
+mvr
+mitral valve replacement
+cad
+coronary artery disease
+htn
+hypertension
+hypertension
+hypotension
+tachycardia
+bradycardia
+arrhythmia
+palpitations
+angina
+angina pectoris
+unstable angina
+stable angina
+cardiomyopathy
+dilated cardiomyopathy
+hypertrophic cardiomyopathy
+restrictive cardiomyopathy
+pericarditis
+myocarditis
+endocarditis
+valvular disease
+mitral stenosis
+mitral regurgitation
+aortic stenosis
+aortic regurgitation
+tricuspid regurgitation
+pulmonary stenosis
+heart block
+bundle branch block
+left bundle branch block
+right bundle branch block
+wolff parkinson white
+supraventricular tachycardia
+svt
+premature ventricular contraction
+pvc
+premature atrial contraction
+pac
+cardiac arrest
+sudden cardiac death
+defibrillation
+cardioversion
+pacemaker
+implantable cardioverter defibrillator
+icd
+left ventricular ejection fraction
+lvef
+ejection fraction
+cardiac output
+cardiac index
+stroke volume
+preload
+afterload
+systolic dysfunction
+diastolic dysfunction
+heart failure with reduced ejection fraction
+hfref
+heart failure with preserved ejection fraction
+hfpef
+natriuretic peptide
+bnp
+troponin
+creatine kinase
+ck mb
+angiography
+angioplasty
+stent
+drug eluting stent
+bare metal stent
+thrombolysis
+fibrinolysis
+anticoagulation
+antiplatelet
+heparin
+warfarin
+aspirin
+clopidogrel
+prasugrel
+ticagrelor
+rivaroxaban
+apixaban
+dabigatran
+beta blocker
+ace inhibitor
+angiotensin receptor blocker
+arb
+calcium channel blocker
+diuretic
+nitrate
+digoxin
+amiodarone
+lidocaine
+adenosine
+dopamine
+dobutamine
+norepinephrine
+epinephrine
+vasopressor
+inotrope
+intra aortic balloon pump
+iabp
+ventricular assist device
+vad
+extracorporeal membrane oxygenation
+ecmo
+cardiac resynchronization therapy
+crt
+transcatheter aortic valve replacement
+tavr
+
+# ── PULMONOLOGY ───────────────────────────────────────────────────────────────
+copd
+chronic obstructive pulmonary disease
+pe
+pulmonary embolism
+ards
+acute respiratory distress syndrome
+pneumonia
+community acquired pneumonia
+cap
+hospital acquired pneumonia
+hap
+ventilator associated pneumonia
+vap
+bronchitis
+acute bronchitis
+chronic bronchitis
+emphysema
+asthma
+bronchiectasis
+pulmonary fibrosis
+interstitial lung disease
+ild
+sarcoidosis
+pleural effusion
+pneumothorax
+tension pneumothorax
+hemothorax
+pleuritis
+pleurisy
+pulmonary hypertension
+pulmonary arterial hypertension
+pah
+obstructive sleep apnea
+osa
+central sleep apnea
+respiratory failure
+acute respiratory failure
+hypoxic respiratory failure
+hypercapnic respiratory failure
+dyspnea
+shortness of breath
+tachypnea
+bradypnea
+apnea
+orthopnea
+hemoptysis
+cough
+productive cough
+nonproductive cough
+wheezing
+stridor
+rales
+rhonchi
+crackles
+breath sounds
+decreased breath sounds
+bronchophony
+egophony
+whispered pectoriloquy
+percussion
+dullness to percussion
+hyperresonance
+spirometry
+forced vital capacity
+fvc
+forced expiratory volume
+fev1
+peak flow
+diffusing capacity
+dlco
+bronchodilator
+albuterol
+ipratropium
+tiotropium
+salmeterol
+formoterol
+inhaled corticosteroid
+fluticasone
+budesonide
+beclomethasone
+leukotriene modifier
+montelukast
+theophylline
+oxygen therapy
+mechanical ventilation
+intubation
+endotracheal tube
+tracheotomy
+tracheostomy
+positive pressure ventilation
+continuous positive airway pressure
+cpap
+bilevel positive airway pressure
+bipap
+tidal volume
+respiratory rate
+peep
+positive end expiratory pressure
+fraction of inspired oxygen
+fio2
+arterial blood gas
+abg
+pulse oximetry
+oxygen saturation
+spo2
+bronchoscopy
+thoracentesis
+chest tube
+thoracostomy
+thoracotomy
+video assisted thoracoscopic surgery
+vats
+lobectomy
+pneumonectomy
+pleurodesis
+
+# ── NEPHROLOGY ────────────────────────────────────────────────────────────────
+ckd
+chronic kidney disease
+aki
+acute kidney injury
+uti
+urinary tract infection
+esrd
+end stage renal disease
+glomerulonephritis
+nephrotic syndrome
+nephritic syndrome
+pyelonephritis
+renal failure
+renal insufficiency
+proteinuria
+hematuria
+pyuria
+oliguria
+anuria
+polyuria
+nocturia
+dysuria
+urinary retention
+hydronephrosis
+nephrolithiasis
+kidney stones
+urolithiasis
+renal calculi
+renal artery stenosis
+renovascular hypertension
+polycystic kidney disease
+pkd
+alport syndrome
+diabetic nephropathy
+hypertensive nephropathy
+lupus nephritis
+iga nephropathy
+berger disease
+minimal change disease
+focal segmental glomerulosclerosis
+fsgs
+membranous nephropathy
+membranoproliferative glomerulonephritis
+mpgn
+thrombotic microangiopathy
+hemolytic uremic syndrome
+hus
+thrombotic thrombocytopenic purpura
+ttp
+renal tubular acidosis
+rta
+fanconi syndrome
+bartter syndrome
+gitelman syndrome
+dialysis
+hemodialysis
+peritoneal dialysis
+continuous renal replacement therapy
+crrt
+renal transplant
+kidney transplant
+glomerular filtration rate
+gfr
+estimated glomerular filtration rate
+egfr
+creatinine
+blood urea nitrogen
+bun
+electrolytes
+sodium
+potassium
+chloride
+bicarbonate
+calcium
+phosphorus
+magnesium
+uric acid
+cystatin c
+urinalysis
+urine culture
+renal ultrasound
+renal biopsy
+nephrectomy
+ureteroscopy
+lithotripsy
+extracorporeal shock wave lithotripsy
+eswl
+
+# ── NEUROLOGY ─────────────────────────────────────────────────────────────────
+cva
+cerebrovascular accident
+tia
+transient ischemic attack
+ms
+multiple sclerosis
+als
+amyotrophic lateral sclerosis
+pd
+parkinson disease
+ad
+alzheimer disease
+stroke
+ischemic stroke
+hemorrhagic stroke
+subarachnoid hemorrhage
+sah
+intracerebral hemorrhage
+ich
+subdural hematoma
+epidural hematoma
+meningitis
+encephalitis
+brain abscess
+seizure
+epilepsy
+status epilepticus
+syncope
+vertigo
+dizziness
+headache
+migraine
+cluster headache
+tension headache
+increased intracranial pressure
+icp
+hydrocephalus
+cerebral edema
+herniation
+uncal herniation
+transtentorial herniation
+cerebral aneurysm
+arteriovenous malformation
+avm
+carotid stenosis
+vertebrobasilar insufficiency
+ataxia
+tremor
+dyskinesia
+dystonia
+chorea
+myoclonus
+neuropathy
+peripheral neuropathy
+polyneuropathy
+mononeuropathy
+carpal tunnel syndrome
+guillain barre syndrome
+myasthenia gravis
+muscular dystrophy
+cerebral palsy
+spinal cord injury
+myelopathy
+radiculopathy
+sciatica
+lumbar stenosis
+cervical stenosis
+dementia
+vascular dementia
+lewy body dementia
+frontotemporal dementia
+delirium
+coma
+vegetative state
+locked in syndrome
+brain death
+electroencephalogram
+eeg
+electromyography
+emg
+nerve conduction study
+ncs
+computed tomography
+ct scan
+magnetic resonance imaging
+mri
+magnetic resonance angiography
+mra
+lumbar puncture
+spinal tap
+cerebrospinal fluid
+csf
+cerebral angiography
+carotid doppler
+transcranial doppler
+evoked potentials
+neurostimulation
+deep brain stimulation
+dbs
+vagus nerve stimulation
+vns
+antiepileptic
+anticonvulsant
+levetiracetam
+valproate
+carbamazepine
+lamotrigine
+phenytoin
+phenobarbital
+tissue plasminogen activator
+tpa
+alteplase
+thrombectomy
+craniectomy
+craniotomy
+burr hole
+ventriculostomy
+ventriculoperitoneal shunt
+vp shunt
+
+# ── GASTROENTEROLOGY ──────────────────────────────────────────────────────────
+gerd
+gastroesophageal reflux disease
+pud
+peptic ulcer disease
+ibd
+inflammatory bowel disease
+cd
+crohn disease
+uc
+ulcerative colitis
+ibs
+irritable bowel syndrome
+gi
+gastrointestinal
+upper gi bleed
+lower gi bleed
+hematemesis
+melena
+hematochezia
+dysphagia
+odynophagia
+nausea
+vomiting
+diarrhea
+constipation
+abdominal pain
+bloating
+flatulence
+jaundice
+hepatitis
+hepatitis a
+hepatitis b
+hepatitis c
+cirrhosis
+portal hypertension
+ascites
+varices
+esophageal varices
+spontaneous bacterial peritonitis
+sbp
+hepatic encephalopathy
+liver failure
+acute liver failure
+nonalcoholic fatty liver disease
+nafld
+nonalcoholic steatohepatitis
+nash
+alcoholic liver disease
+primary biliary cholangitis
+pbc
+primary sclerosing cholangitis
+psc
+autoimmune hepatitis
+liver transplant
+pancreatitis
+acute pancreatitis
+chronic pancreatitis
+pancreatic cancer
+cholecystitis
+cholelithiasis
+gallstones
+choledocholithiasis
+cholangitis
+appendicitis
+diverticulitis
+diverticulosis
+colorectal cancer
+colon cancer
+rectal cancer
+polyp
+adenoma
+celiac disease
+malabsorption
+lactose intolerance
+gastroparesis
+ileus
+small bowel obstruction
+large bowel obstruction
+volvulus
+intussusception
+hernia
+inguinal hernia
+umbilical hernia
+hiatal hernia
+fistula
+abscess
+endoscopy
+upper endoscopy
+colonoscopy
+sigmoidoscopy
+capsule endoscopy
+endoscopic retrograde cholangiopancreatography
+ercp
+endoscopic ultrasound
+eus
+liver biopsy
+paracentesis
+esophagogastroduodenoscopy
+egd
+proton pump inhibitor
+ppi
+omeprazole
+pantoprazole
+lansoprazole
+h2 blocker
+ranitidine
+famotidine
+antacid
+metoclopramide
+ondansetron
+mesalamine
+azathioprine
+mercaptopurine
+infliximab
+adalimumab
+
+# ── ENDOCRINOLOGY ─────────────────────────────────────────────────────────────
+dm
+diabetes mellitus
+t1dm
+type 1 diabetes mellitus
+t2dm
+type 2 diabetes mellitus
+dka
+diabetic ketoacidosis
+hhs
+hyperosmolar hyperglycemic state
+hypoglycemia
+hyperglycemia
+insulin resistance
+metabolic syndrome
+obesity
+hypothyroidism
+hyperthyroidism
+thyrotoxicosis
+graves disease
+hashimoto thyroiditis
+thyroid nodule
+thyroid cancer
+goiter
+thyroid storm
+adrenal insufficiency
+addison disease
+cushing syndrome
+hyperaldosteronism
+conn syndrome
+pheochromocytoma
+acromegaly
+gigantism
+hypopituitarism
+panhypopituitarism
+diabetes insipidus
+siadh
+syndrome of inappropriate antidiuretic hormone
+hypercalcemia
+hypocalcemia
+hyperparathyroidism
+hypoparathyroidism
+osteoporosis
+osteopenia
+osteomalacia
+rickets
+hyperuricemia
+gout
+pseudogout
+polycystic ovary syndrome
+pcos
+hypogonadism
+testosterone deficiency
+estrogen deficiency
+menopause
+premature ovarian failure
+hemoglobin a1c
+hba1c
+fasting glucose
+postprandial glucose
+glucose tolerance test
+insulin
+metformin
+sulfonylurea
+glipizide
+glimepiride
+thiazolidinedione
+pioglitazone
+dpp4 inhibitor
+sitagliptin
+sglt2 inhibitor
+empagliflozin
+dapagliflozin
+glp1 agonist
+liraglutide
+semaglutide
+levothyroxine
+methimazole
+propylthiouracil
+radioactive iodine
+hydrocortisone
+prednisone
+fludrocortisone
+denosumab
+bisphosphonate
+alendronate
+zoledronic acid
+
+# ── HEMATOLOGY / ONCOLOGY ─────────────────────────────────────────────────────
+anemia
+iron deficiency anemia
+megaloblastic anemia
+pernicious anemia
+hemolytic anemia
+sickle cell anemia
+thalassemia
+aplastic anemia
+polycythemia vera
+thrombocytopenia
+thrombocytosis
+leukopenia
+leukocytosis
+neutropenia
+neutrophilia
+lymphopenia
+lymphocytosis
+eosinophilia
+basophilia
+pancytopenia
+coagulopathy
+disseminated intravascular coagulation
+dic
+hemophilia
+von willebrand disease
+thrombophilia
+hypercoagulable state
+deep vein thrombosis
+dvt
+pulmonary embolism
+pe
+antiphospholipid syndrome
+heparin induced thrombocytopenia
+hit
+leukemia
+acute myeloid leukemia
+aml
+acute lymphoblastic leukemia
+all
+chronic myeloid leukemia
+cml
+chronic lymphocytic leukemia
+cll
+lymphoma
+hodgkin lymphoma
+non hodgkin lymphoma
+nhl
+diffuse large b cell lymphoma
+dlbcl
+follicular lymphoma
+mantle cell lymphoma
+burkitt lymphoma
+multiple myeloma
+myelodysplastic syndrome
+mds
+myeloproliferative neoplasm
+mpn
+essential thrombocythemia
+et
+primary myelofibrosis
+pmf
+bone marrow transplant
+stem cell transplant
+hematopoietic stem cell transplantation
+hsct
+graft versus host disease
+gvhd
+chemotherapy
+radiation therapy
+immunotherapy
+targeted therapy
+checkpoint inhibitor
+car t cell therapy
+rituximab
+cyclophosphamide
+doxorubicin
+vincristine
+prednisone
+chop
+r chop
+imatinib
+dasatinib
+nilotinib
+bortezomib
+lenalidomide
+thalidomide
+erythropoietin
+epo
+granulocyte colony stimulating factor
+gcsf
+filgrastim
+pegfilgrastim
+platelet transfusion
+red blood cell transfusion
+fresh frozen plasma
+cryoprecipitate
+complete blood count
+cbc
+peripheral blood smear
+bone marrow biopsy
+flow cytometry
+cytogenetics
+molecular testing
+pcr
+fish
+
+# ── RHEUMATOLOGY ──────────────────────────────────────────────────────────────
+ra
+rheumatoid arthritis
+sle
+systemic lupus erythematosus
+lupus
+oa
+osteoarthritis
+gout
+pseudogout
+psoriatic arthritis
+ankylosing spondylitis
+reactive arthritis
+juvenile idiopathic arthritis
+jia
+sjogren syndrome
+scleroderma
+systemic sclerosis
+polymyositis
+dermatomyositis
+mixed connective tissue disease
+mctd
+vasculitis
+giant cell arteritis
+gca
+polymyalgia rheumatica
+pmr
+takayasu arteritis
+polyarteritis nodosa
+granulomatosis with polyangiitis
+wegener granulomatosis
+microscopic polyangiitis
+eosinophilic granulomatosis with polyangiitis
+churg strauss
+behcet disease
+fibromyalgia
+joint pain
+arthralgia
+myalgia
+synovitis
+tenosynovitis
+bursitis
+tendinitis
+enthesitis
+joint effusion
+synovial fluid
+arthrocentesis
+rheumatoid factor
+rf
+anti cyclic citrullinated peptide
+anti ccp
+antinuclear antibody
+ana
+anti double stranded dna
+anti ds dna
+anti smith
+anti ro
+anti la
+anti scl 70
+anti centromere
+complement
+c3
+c4
+ch50
+erythrocyte sedimentation rate
+esr
+c reactive protein
+crp
+disease modifying antirheumatic drug
+dmard
+methotrexate
+hydroxychloroquine
+sulfasalazine
+leflunomide
+biologic
+tnf inhibitor
+etanercept
+adalimumab
+infliximab
+certolizumab
+golimumab
+abatacept
+rituximab
+tocilizumab
+baricitinib
+tofacitinib
+upadacitinib
+nonsteroidal anti inflammatory
+nsaid
+ibuprofen
+naproxen
+indomethacin
+celecoxib
+colchicine
+allopurinol
+febuxostat
+probenecid
+
+# ── INFECTIOUS DISEASE ────────────────────────────────────────────────────────
+sepsis
+septic shock
+bacteremia
+fungemia
+viremia
+meningitis
+bacterial meningitis
+viral meningitis
+fungal meningitis
+encephalitis
+endocarditis
+infective endocarditis
+osteomyelitis
+septic arthritis
+cellulitis
+abscess
+pneumonia
+urinary tract infection
+pyelonephritis
+intraabdominal infection
+peritonitis
+cholangitis
+appendicitis
+wound infection
+surgical site infection
+central line associated bloodstream infection
+clabsi
+catheter associated urinary tract infection
+cauti
+ventilator associated pneumonia
+vap
+clostridium difficile
+c diff
+clostridioides difficile
+methicillin resistant staphylococcus aureus
+mrsa
+vancomycin resistant enterococcus
+vre
+extended spectrum beta lactamase
+esbl
+carbapenem resistant enterobacteriaceae
+cre
+human immunodeficiency virus
+hiv
+acquired immunodeficiency syndrome
+aids
+tuberculosis
+tb
+latent tuberculosis
+active tuberculosis
+malaria
+typhoid
+dengue
+influenza
+covid
+coronavirus
+sars cov 2
+hepatitis b
+hepatitis c
+herpes simplex virus
+hsv
+varicella zoster virus
+vzv
+cytomegalovirus
+cmv
+epstein barr virus
+ebv
+human papillomavirus
+hpv
+antibiotic
+vancomycin
+linezolid
+daptomycin
+ceftriaxone
+cefepime
+piperacillin tazobactam
+meropenem
+imipenem
+ertapenem
+azithromycin
+doxycycline
+ciprofloxacin
+levofloxacin
+metronidazole
+fluconazole
+voriconazole
+amphotericin
+acyclovir
+oseltamivir
+antiretroviral
+highly active antiretroviral therapy
+haart
+blood culture
+wound culture
+urine culture
+sputum culture
+sensitivity
+minimum inhibitory concentration
+mic
+antimicrobial stewardship
+
+# ── PSYCHIATRY ────────────────────────────────────────────────────────────────
+mdd
+major depressive disorder
+depression
+anxiety
+generalized anxiety disorder
+gad
+panic disorder
+panic attack
+social anxiety disorder
+obsessive compulsive disorder
+ocd
+post traumatic stress disorder
+ptsd
+bipolar disorder
+bipolar one
+bipolar two
+schizophrenia
+schizoaffective disorder
+psychosis
+mania
+hypomania
+depression
+anhedonia
+suicidal ideation
+homicidal ideation
+self harm
+eating disorder
+anorexia nervosa
+bulimia nervosa
+binge eating disorder
+attention deficit hyperactivity disorder
+adhd
+autism spectrum disorder
+asd
+intellectual disability
+personality disorder
+borderline personality disorder
+narcissistic personality disorder
+antisocial personality disorder
+substance use disorder
+alcohol use disorder
+opioid use disorder
+stimulant use disorder
+withdrawal
+delirium
+dementia
+cognitive impairment
+mental status examination
+mse
+mini mental state examination
+mmse
+montreal cognitive assessment
+moca
+geriatric depression scale
+hamilton anxiety scale
+beck depression inventory
+columbia suicide severity rating scale
+antidepressant
+selective serotonin reuptake inhibitor
+ssri
+serotonin norepinephrine reuptake inhibitor
+snri
+sertraline
+fluoxetine
+escitalopram
+citalopram
+paroxetine
+venlafaxine
+duloxetine
+bupropion
+mirtazapine
+tricyclic antidepressant
+tca
+monoamine oxidase inhibitor
+maoi
+antipsychotic
+typical antipsychotic
+atypical antipsychotic
+haloperidol
+chlorpromazine
+risperidone
+olanzapine
+quetiapine
+aripiprazole
+clozapine
+ziprasidone
+mood stabilizer
+lithium
+valproate
+lamotrigine
+benzodiazepine
+diazepam
+lorazepam
+clonazepam
+alprazolam
+stimulant
+methylphenidate
+amphetamine
+electroconvulsive therapy
+ect
+transcranial magnetic stimulation
+tms
+cognitive behavioral therapy
+cbt
+dialectical behavior therapy
+dbt
+
+# ── ORTHOPEDICS ───────────────────────────────────────────────────────────────
+fracture
+stress fracture
+pathological fracture
+open fracture
+closed fracture
+comminuted fracture
+displaced fracture
+nondisplaced fracture
+spiral fracture
+transverse fracture
+oblique fracture
+compression fracture
+avulsion fracture
+greenstick fracture
+dislocation
+subluxation
+sprain
+strain
+ligament tear
+tendon rupture
+meniscus tear
+rotator cuff tear
+labral tear
+carpal tunnel syndrome
+cubital tunnel syndrome
+trigger finger
+dupuytren contracture
+osteomyelitis
+septic arthritis
+avascular necrosis
+osteonecrosis
+bone tumor
+osteosarcoma
+chondrosarcoma
+ewing sarcoma
+metastatic bone disease
+scoliosis
+kyphosis
+lordosis
+spinal stenosis
+herniated disc
+disc herniation
+spondylosis
+spondylolisthesis
+spondylolysis
+total hip replacement
+total knee replacement
+total shoulder replacement
+arthroplasty
+arthroscopy
+open reduction internal fixation
+orif
+external fixation
+intramedullary nail
+bone graft
+amputation
+prosthesis
+cast
+splint
+traction
+physical therapy
+occupational therapy
+range of motion
+rehabilitation
+
+# ── OBSTETRICS / GYNECOLOGY ───────────────────────────────────────────────────
+pregnancy
+gravida
+para
+gestational age
+trimester
+prenatal
+antenatal
+antepartum
+intrapartum
+postpartum
+labor
+delivery
+vaginal delivery
+cesarean section
+c section
+preterm labor
+premature rupture of membranes
+prom
+preeclampsia
+eclampsia
+hellp syndrome
+gestational diabetes
+gestational hypertension
+placenta previa
+placental abruption
+ectopic pregnancy
+miscarriage
+spontaneous abortion
+stillbirth
+fetal heart rate
+fetal distress
+meconium
+apgar score
+neonatal
+newborn
+breastfeeding
+lactation
+menstruation
+menstrual cycle
+dysmenorrhea
+amenorrhea
+menorrhagia
+metrorrhagia
+menopause
+perimenopause
+endometriosis
+adenomyosis
+uterine fibroid
+leiomyoma
+ovarian cyst
+polycystic ovary syndrome
+pcos
+cervical cancer
+endometrial cancer
+ovarian cancer
+vulvar cancer
+vaginal cancer
+pap smear
+colposcopy
+hysteroscopy
+laparoscopy
+hysterectomy
+oophorectomy
+salpingectomy
+myomectomy
+endometrial ablation
+intrauterine device
+iud
+oral contraceptive
+contraception
+fertility
+infertility
+ivf
+in vitro fertilization
+intracytoplasmic sperm injection
+icsi
+
+# ── PEDIATRICS ────────────────────────────────────────────────────────────────
+neonate
+newborn
+infant
+toddler
+preschool
+school age
+adolescent
+pediatric
+neonatal intensive care unit
+nicu
+failure to thrive
+ftt
+developmental delay
+autism spectrum disorder
+asd
+attention deficit hyperactivity disorder
+adhd
+cerebral palsy
+down syndrome
+trisomy 21
+turner syndrome
+klinefelter syndrome
+phenylketonuria
+pku
+cystic fibrosis
+congenital heart disease
+ventricular septal defect
+vsd
+atrial septal defect
+asd
+patent ductus arteriosus
+pda
+tetralogy of fallot
+transposition of the great arteries
+coarctation of the aorta
+kawasaki disease
+intussusception
+pyloric stenosis
+hirschsprung disease
+necrotizing enterocolitis
+nec
+respiratory syncytial virus
+rsv
+croup
+bronchiolitis
+whooping cough
+pertussis
+measles
+mumps
+rubella
+chickenpox
+varicella
+hand foot and mouth disease
+roseola
+scarlet fever
+meningococcal disease
+vaccination
+immunization
+growth hormone
+precocious puberty
+delayed puberty
+
+# ── OPHTHALMOLOGY ────────────────────────────────────────────────────────────
+glaucoma
+open angle glaucoma
+closed angle glaucoma
+cataract
+macular degeneration
+age related macular degeneration
+amd
+diabetic retinopathy
+hypertensive retinopathy
+retinal detachment
+retinal vein occlusion
+retinal artery occlusion
+optic neuritis
+papilledema
+uveitis
+conjunctivitis
+keratitis
+corneal ulcer
+dry eye syndrome
+strabismus
+amblyopia
+myopia
+hyperopia
+astigmatism
+presbyopia
+intraocular pressure
+iop
+visual field defect
+scotoma
+diplopia
+photophobia
+visual acuity
+slit lamp
+fundoscopy
+optical coherence tomography
+oct
+fluorescein angiography
+laser photocoagulation
+vitrectomy
+phacoemulsification
+trabeculectomy
+intravitreal injection
+
+# ── DERMATOLOGY ───────────────────────────────────────────────────────────────
+eczema
+atopic dermatitis
+psoriasis
+urticaria
+hives
+angioedema
+contact dermatitis
+seborrheic dermatitis
+rosacea
+acne
+acne vulgaris
+cellulitis
+erysipelas
+impetigo
+folliculitis
+furuncle
+carbuncle
+abscess
+tinea
+tinea corporis
+tinea pedis
+tinea capitis
+tinea unguium
+onychomycosis
+herpes zoster
+shingles
+herpes simplex
+molluscum contagiosum
+warts
+verruca
+scabies
+lice
+pediculosis
+melanoma
+basal cell carcinoma
+squamous cell carcinoma
+actinic keratosis
+seborrheic keratosis
+dermatofibroma
+lipoma
+epidermoid cyst
+vitiligo
+alopecia
+alopecia areata
+androgenetic alopecia
+Stevens johnson syndrome
+toxic epidermal necrolysis
+ten
+drug reaction
+drug eruption
+purpura
+petechiae
+ecchymosis
+erythema multiforme
+erythema nodosum
+dermatomyositis
+scleroderma
+lupus
+discoid lupus
+cutaneous lupus
+skin biopsy
+patch test
+wood lamp
+dermoscopy
+punch biopsy
+excision
+mohs surgery
+cryotherapy
+phototherapy
+
+# ── GENERAL MEDICINE / COMMON TERMS ──────────────────────────────────────────
+blood pressure
+heart rate
+respiratory rate
+temperature
+oxygen saturation
+body mass index
+bmi
+chief complaint
+history of present illness
+hpi
+past medical history
+pmh
+past surgical history
+psh
+family history
+fh
+social history
+sh
+review of systems
+ros
+physical examination
+pe
+vital signs
+general appearance
+well appearing
+ill appearing
+alert and oriented
+oriented times three
+oriented times four
+no acute distress
+nad
+normocephalic atraumatic
+ncat
+pupils equal round reactive to light
+perrl
+extraocular movements intact
+eomi
+mucous membranes moist
+regular rate and rhythm
+rrr
+no murmurs rubs or gallops
+clear to auscultation bilaterally
+ctab
+soft nontender nondistended
+nontender
+nondistended
+bowel sounds present
+no edema
+cranial nerves intact
+deep tendon reflexes
+motor strength
+sensory intact
+gait normal
+assessment and plan
+differential diagnosis
+workup
+laboratory studies
+imaging
+treatment plan
+follow up
+discharge
+admission
+consult
+referral
+stat
+prn
+as needed
+bid
+twice daily
+tid
+three times daily
+qid
+four times daily
+qhs
+at bedtime
+po
+by mouth
+iv
+intravenous
+im
+intramuscular
+sc
+subcutaneous
+sl
+sublingual
+ng
+nasogastric
+npo
+nothing by mouth
+dnr
+do not resuscitate
+dni
+do not intubate
+full code
+advance directive
+living will
+power of attorney
+informed consent
+allergy
+adverse reaction
+contraindication
+indication
+mechanism of action
+pharmacokinetics
+pharmacodynamics
+half life
+bioavailability
+therapeutic index
+loading dose
+maintenance dose
+renal dosing
+hepatic dosing
+therapeutic drug monitoring
+drug interaction
+polypharmacy

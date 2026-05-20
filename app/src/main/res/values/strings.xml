@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">Sherpa STT</string>
+    <string name="status_idle">Loading model…</string>
+    <string name="status_loading">Initializing Zipformer model…</string>
+    <string name="status_ready">Tap the mic to start</string>
+    <string name="status_listening">Listening… speak now</string>
+    <string name="transcript_hint">Your transcription will appear here…</string>
+    <string name="btn_start">Start recording</string>
+    <string name="btn_stop">Stop recording</string>
+    <string name="btn_clear">Clear</string>
+</resources>
