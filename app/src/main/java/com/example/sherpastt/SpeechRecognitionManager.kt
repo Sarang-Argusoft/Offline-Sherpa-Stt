@@ -77,6 +77,9 @@ class SpeechRecognitionManager(private val context: Context) {
                 SherpaOnnxConfig.MODEL_DIR
             )
 
+            // ── NEW — copy hotwords.txt to internal storage ───────────────────────
+            val hotwordsPath = copyHotwordsToStorage()
+
             // 2. Build Zipformer transducer config
             val transducer = OnlineTransducerModelConfig(
                 encoder = "$modelDir/${SherpaOnnxConfig.ENCODER}",
@@ -117,7 +120,9 @@ class SpeechRecognitionManager(private val context: Context) {
                 modelConfig     = modelConfig,
                 endpointConfig  = endpointConfig,
                 enableEndpoint  = SherpaOnnxConfig.ENABLE_ENDPOINT,
-                decodingMethod  = "greedy_search"
+                decodingMethod  = "modified_beam_search",
+                hotwordsFile   = hotwordsPath,
+                hotwordsScore  = SherpaOnnxConfig.HOTWORDS_SCORE
             )
 
             // 5. Create the recognizer
@@ -361,6 +366,23 @@ class SpeechRecognitionManager(private val context: Context) {
             audioRecord = null
         }
     }
+
+    // ── NEW function — copies hotwords.txt from assets → internal storage ────────
+    private fun copyHotwordsToStorage(): String {
+        val destFile = java.io.File(
+            context.filesDir,
+            SherpaOnnxConfig.HOTWORDS_FILE
+        )
+        if (!destFile.exists()) {
+            context.assets.open(SherpaOnnxConfig.HOTWORDS_FILE).use { input ->
+            destFile.outputStream().use { output ->
+                input.copyTo(output)
+            }
+        }
+        Log.d(TAG, "Hotwords copied to: ${destFile.absolutePath}")
+    }
+    return destFile.absolutePath
+}
 
     // ── Helpers ──────────────────────────────────────────────────────────────
 

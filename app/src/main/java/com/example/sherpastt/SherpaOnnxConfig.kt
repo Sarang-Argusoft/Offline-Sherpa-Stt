@@ -27,6 +27,10 @@ object SherpaOnnxConfig {
     const val JOINER   = "joiner-epoch-99-avg-1-chunk-16-left-128.int8.onnx"
     const val TOKENS   = "tokens.txt"
 
+    // ── Hotwords ─────────────────────────────────────────────────────────────
+    const val HOTWORDS_FILE  = "hotwords.txt"
+    const val HOTWORDS_SCORE = 20.0f
+
     // ----- Audio settings -----
     const val SAMPLE_RATE      = 16000   // Zipformer expects 16kHz mono
     const val CHANNELS         = 1
