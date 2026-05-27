@@ -32,3 +32,23 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Offline Model Files & Large Binaries
+kokoro-en-v0_19/
+*.onnx
+*.bin
+*.gguf
+*.tflite
+
+# Archive/Compressed files for models
+*.tar.bz2
+*.tar.gz
+*.zip
+*.tar
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Offline TTS dictionary files
+app/src/main/assets/kokora/espeak-ng-data/
