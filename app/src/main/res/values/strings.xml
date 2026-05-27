@@ -10,4 +10,24 @@
     <string name="btn_start">Start recording</string>
     <string name="btn_stop">Stop recording</string>
     <string name="btn_clear">Clear</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Sherpa Offline Suite</string>
+    <string name="home_subtitle">On-device high-performance voice processing</string>
+    <string name="stt_card_title">Speech-to-Text (STT)</string>
+    <string name="stt_card_desc">Transcribe spoken audio in real-time entirely offline.</string>
+    <string name="tts_card_title">Text-to-Speech (TTS)</string>
+    <string name="tts_card_desc">Convert written text to natural speech locally using Kokoro.</string>
+
+    <!-- TTS Screen -->
+    <string name="tts_title">Text To Speech</string>
+    <string name="tts_hint">Enter text to speak…</string>
+    <string name="btn_speak">Speak</string>
+    <string name="btn_stop_tts">Stop</string>
+    <string name="status_tts_ready">Ready</string>
+    <string name="status_tts_initializing">Initializing Kokoro model…</string>
+    <string name="status_tts_generating">Generating speech…</string>
+    <string name="status_tts_playing">Playing audio…</string>
+    <string name="status_tts_completed">Completed</string>
+    <string name="status_tts_error">Error</string>
 </resources>
