@@ -29,7 +29,7 @@ object SherpaOnnxConfig {
 
     // ── Hotwords ─────────────────────────────────────────────────────────────
     const val HOTWORDS_FILE  = "hotwords.txt"
-    const val HOTWORDS_SCORE = 20.0f
+    const val HOTWORDS_SCORE = 50.0f
 
     // ----- Audio settings -----
     const val SAMPLE_RATE      = 16000   // Zipformer expects 16kHz mono

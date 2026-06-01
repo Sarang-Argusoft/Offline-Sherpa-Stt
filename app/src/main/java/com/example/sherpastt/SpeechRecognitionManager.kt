@@ -77,8 +77,8 @@ class SpeechRecognitionManager(private val context: Context) {
                 SherpaOnnxConfig.MODEL_DIR
             )
 
-            // ── NEW — copy hotwords.txt to internal storage ───────────────────────
-            val hotwordsPath = copyHotwordsToStorage()
+            // ── Hotwords disabled — requires bpe.model which is missing from assets ─────────────────
+            // val hotwordsPath = copyHotwordsToStorage()
 
             // 2. Build Zipformer transducer config
             val transducer = OnlineTransducerModelConfig(
@@ -120,9 +120,10 @@ class SpeechRecognitionManager(private val context: Context) {
                 modelConfig     = modelConfig,
                 endpointConfig  = endpointConfig,
                 enableEndpoint  = SherpaOnnxConfig.ENABLE_ENDPOINT,
-                decodingMethod  = "modified_beam_search",
-                hotwordsFile   = hotwordsPath,
-                hotwordsScore  = SherpaOnnxConfig.HOTWORDS_SCORE
+                decodingMethod  = "modified_beam_search"
+                // Hotwords disabled because bpe.model is missing
+                // hotwordsFile   = hotwordsPath,
+                // hotwordsScore  = SherpaOnnxConfig.HOTWORDS_SCORE
             )
 
             // 5. Create the recognizer
@@ -164,25 +165,42 @@ class SpeechRecognitionManager(private val context: Context) {
     }
 
     fun stopListening() {
-        recordingJob?.cancel()
-        recordingJob = null
-        audioRecord?.stop()
-        audioRecord?.release()
-        audioRecord = null
+        if (_state.value != State.Listening) return
 
-        flushStream()
+        // Run cleanup in the manager's scope to avoid blocking UI
+        // and ensure thread safety with the recognizer.
+        scope.launch {
+            try {
+                // 1. Signal stop to the recording job and WAIT for it to exit its loop
+                recordingJob?.cancelAndJoin()
+                recordingJob = null
 
-        _state.value = State.Ready
-        Log.d(TAG, "Stopped listening")
+                // 2. Finalize the stream and pull any remaining text
+                flushStream()
+
+                Log.d(TAG, "Stopped listening successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error during stopListening", e)
+            } finally {
+                _state.value = State.Ready
+            }
+        }
     }
 
     private fun flushStream() {
         stream?.let { s ->
-            recognizer?.decode(s)
-            val lastText = recognizer?.getResult(s)?.text?.trim() ?: ""
-            if (lastText.isNotEmpty()) {
-                fullTranscript.append(" $lastText")
-                _finalResult.value = fullTranscript.toString().trim()
+            try {
+                s.inputFinished()
+                while (recognizer?.isReady(s) == true) {
+                    recognizer?.decode(s)
+                }
+                val lastText = recognizer?.getResult(s)?.text?.trim() ?: ""
+                if (lastText.isNotEmpty()) {
+                    fullTranscript.append(if (fullTranscript.isBlank()) lastText else " $lastText")
+                    _finalResult.value = fullTranscript.toString().trim()
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Error flushing stream", e)
             }
         }
     }
@@ -255,9 +273,6 @@ class SpeechRecognitionManager(private val context: Context) {
         val chunkSize = 1600 // 100ms at 16kHz
         var offset = 0
         
-        // Ensure stream is fresh and only one processing job is active
-        stream?.inputFinished() 
-
         while (offset < samples.size && isActive) {
             val count = minOf(chunkSize, samples.size - offset)
             val chunk = samples.sliceArray(offset until offset + count)
@@ -284,10 +299,8 @@ class SpeechRecognitionManager(private val context: Context) {
             
             offset += count
         }
-        stream!!.inputFinished()
-        while (recognizer!!.isReady(stream!!)) {
-            recognizer!!.decode(stream!!)
-        }
+
+        // Finalize processing
         flushStream()
     }
 
@@ -367,23 +380,6 @@ class SpeechRecognitionManager(private val context: Context) {
         }
     }
 
-    // ── NEW function — copies hotwords.txt from assets → internal storage ────────
-    private fun copyHotwordsToStorage(): String {
-        val destFile = java.io.File(
-            context.filesDir,
-            SherpaOnnxConfig.HOTWORDS_FILE
-        )
-        if (!destFile.exists()) {
-            context.assets.open(SherpaOnnxConfig.HOTWORDS_FILE).use { input ->
-            destFile.outputStream().use { output ->
-                input.copyTo(output)
-            }
-        }
-        Log.d(TAG, "Hotwords copied to: ${destFile.absolutePath}")
-    }
-    return destFile.absolutePath
-}
-
     // ── Helpers ──────────────────────────────────────────────────────────────
 
     fun clearTranscript() {
@@ -397,12 +393,12 @@ class SpeechRecognitionManager(private val context: Context) {
                 PackageManager.PERMISSION_GRANTED
 
     fun release() {
-        stopListening()
+        scope.cancel() // Stop any active jobs first
+        
         stream?.release()
         stream = null
         recognizer?.release()
         recognizer = null
-        scope.cancel()
         Log.d(TAG, "Resources released")
     }
 }

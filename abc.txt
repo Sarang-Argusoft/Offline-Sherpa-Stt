@@ -1,0 +1,80 @@
+# Offline Kokoro TTS Integration Implementation Plan
+
+This plan details the architecture and implementation steps to add an offline Text-to-Speech (TTS) feature using **Kokoro English v0.19** via **Sherpa-ONNX TTS** to the existing Android application. All existing Speech-to-Text (STT) components will remain untouched.
+
+---
+
+## 1. Directory & Package Structure
+
+We will create a clean MVVM sub-package under `com.example.sherpastt.tts`:
+
+```
+app/src/main/java/com/example/sherpastt/
+│
+├── MainActivity.kt               <-- UNCHANGED (Existing STT Screen)
+├── SpeechRecognitionManager.kt   <-- UNCHANGED
+├── AssetUtils.kt                 <-- UNCHANGED (We will add recursive copying helper safely here or inside TTS)
+│
+├── HomeActivity.kt               <-- NEW Launcher/Home Screen
+│
+└── tts/                          <-- NEW TTS Package
+    ├── ui/
+    │   ├── TtsActivity.kt        <-- TTS View (View Binding)
+    │   └── TtsViewModel.kt       <-- TTS ViewModel (Flow state exposure)
+    │
+    ├── domain/
+    │   └── TtsUseCase.kt         <-- TTS Business Logic
+    │
+    ├── data/
+    │   └── KokoroTtsRepository.kt <-- Offline TTS Repository
+    │
+    ├── engine/
+    │   ├── KokoroTtsEngine.kt    <-- Sherpa-ONNX TTS Initialization & Inference
+    │   ├── AudioPlayer.kt        <-- AudioTrack Float PCM Playback Manager
+    │   └── PronunciationProcessor.kt <-- Interface & Custom Pronunciation Layer
+    │
+    └── model/
+        └── TtsUiState.kt         <-- TTS UI State Sealed Class/Data Class
+```
+
+---
+
+## 2. Resource & Asset Additions
+
+### Assets
+The Kokoro model assets are expected under `assets/kokoro/`:
+- `assets/kokoro/model.onnx`
+- `assets/kokoro/voices.bin`
+- `assets/kokoro/tokens.txt`
+- `assets/kokoro/espeak-ng-data/`
+
+### Drawables
+- `res/drawable/ic_stt.xml` - Vector icon for STT card
+- `res/drawable/ic_tts.xml` - Vector icon for TTS card
+- `res/drawable/ic_stop.xml` - Vector icon for the playback stop button
+
+### Layouts
+- `res/layout/activity_home.xml` - Stately launcher screen
+- `res/layout/activity_tts.xml` - Text-to-speech screen with text input, speak/stop controls, and statuses
+
+---
+
+## 3. Detailed Component Architecture
+
+### A. Pronunciation Layer
+- **`PronunciationProcessor` (Interface)**: Defines `process(text: String): String`.
+- **`MedicalPronunciationProcessor` (Implementation)**: Preprocesses clinical words (e.g., *Atorvastatin*, *Myocardial infarction*) to enhance Kokoro pronunciation accuracy using a custom dictionary before passing to the engine.
+
+### B. Audio Playback
+- **`AudioPlayer`**: Manages `AudioTrack` in `MODE_STREAM` with `AudioFormat.ENCODING_PCM_FLOAT`. Implements non-blocking chunked writes for real-time play, pause, stop, and clean cancellation via Coroutines.
+
+### C. Engine & Repository
+- **`KokoroTtsEngine`**: Single instance wrapper of `com.k2fsa.sherpa.onnx.OfflineTts`. Automatically copies Kokoro assets from APK assets to application internal files recursively (including `espeak-ng-data` subdirectory) and initializes once.
+- **`KokoroTtsRepository`**: Handles communication with the engine, calling preprocessing, generating audio samples, and feeding the samples to the `AudioPlayer`.
+
+---
+
+## 4. UI & Flow Design
+
+1. **HomeActivity**: Simple and stunning landing page with large material card selectors. Clicking STT opens `MainActivity`, and clicking TTS opens `TtsActivity`.
+2. **TtsActivity**: Features an elegant input container, smooth transition states, a dynamic Speak/Stop FAB, and status messages that transition gracefully.
